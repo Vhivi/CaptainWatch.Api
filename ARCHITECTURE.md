@@ -8,10 +8,10 @@ The **CaptainWatch.Api Project** is an API service designed to provide movie and
 
 ```mermaid
 graph TD
-    A[Client (Web/App)] -->|Interacts With| E[API - ASP.NET Core]
+    A[Client - Web/App] -->|Interacts With| E[API - ASP.NET Core]
     E -->|Sends HTTP Responses| A
     E -->|Reads/Writes| B[Database]
-    E -->|Integrates| C[External APIs (TMDb, IMDb, etc.)]
+    E -->|Integrates| C[External APIs - TMDb, IMDb, etc.]
     E -->|Handles| D[Business Logic Layer]
     B -->|Stores| F[Movies, Shows, Users, Preferences]
     D -->|Processes| F
